@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta charset="utf-8">
+	<meta lang="pt-br">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/tvopovo.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/icon.css">
+</head>
+<body>
+
+	<div class="container-fluid d-flex flex-column px-0">
+
+		<div class="menu-topo d-lg-flex justify-content-lg-between align-items-lg-center">
+			<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+			<label for="openSidebarMenu" class="sidebarIconToggle">
+				<div class="spinner diagonal part-1"></div>
+				<div class="spinner horizontal"></div>
+				<div class="spinner diagonal part-2"></div>
+			</label>
+
+			<h1 class="logo">
+				<a href="index.html"><img src="img/logo-desktop.svg"></a>
+			</h1>
+
+			<nav class="nav-menu" id="navbar">
+				
+				<ul class="">
+					<li><a href="sobre.html">SOBRE</a></li>
+					<li><a href="aovivo.html">AO VIVO</a></li>
+					<li><a href="programas.html">PROGRAMAS</a></li>
+					<li><a href="programacao.html">PROGRAMAÇÃO</a></li>
+					<li><a href="parceiros.html">PARCEIROS</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
+					<li><a href=".html">FUNDAÇÃO</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides" id="content-1">
+				<img src="img/bg-topo.jpg" style="width:100%">
+				<div class="text">
+					<h1>Enfrentamento à Violência Sexual contra crianças e adolescentes</h1>
+					<br>
+					<p style="color: white;">A Fundação Demócrito Rocha (tvopovo) é um espaço coletivo, democrático, de ideias e ações que resultem, principalmente, no desenvolvimento humano e de seu meio ambiente global.</p>
+					<br>
+					<button class="button-slide"><a class="button-slide-link" href="#">Ver mais</a></button>
+				</div>
+			</div>
+
+			<div class="mySlides" id="content-2">
+				<img src="img/bg-topo1.jpg" style="width:100%">
+				<div class="text">
+					<h1>Teste 2</h1>
+					<br>
+					<p style="color: white;">A Fundação Demócrito Rocha (tvopovo) é um espaço coletivo, democrático, de ideias e ações que resultem, principalmente, no desenvolvimento humano e de seu meio ambiente global.</p>
+					<br>
+					<button class="button-slide"><a class="button-slide-link" href="#">Ver mais</a></button>
+				</div>
+			</div>
+
+
+			<div class="mySlides" id="content-3">
+				<img src="img/bg-topo2.jpg" style="width:100%">
+				<div class="text">
+					<h1>Teste 3</h1>
+					<br>
+					<p style="color: white;">A Fundação Demócrito Rocha (tvopovo) é um espaço coletivo, democrático, de ideias e ações que resultem, principalmente, no desenvolvimento humano e de seu meio ambiente global.</p>
+					<br>
+					<button class="button-slide"><a class="button-slide-link" href="#">Ver mais</a></button>
+				</div>
+			</div>
+
+
+			<div class="mySlides" id="content-4">
+				<img src="img/bg-topo2.jpg" style="width:100%">
+				<div class="text">
+					<h1>Teste 4</h1>
+					<br>
+					<p style="color: white;">A Fundação Demócrito Rocha (tvopovo) é um espaço coletivo, democrático, de ideias e ações que resultem, principalmente, no desenvolvimento humano e de seu meio ambiente global.</p>
+					<br>
+					<button class="button-slide"><a class="button-slide-link" href="#">Ver mais</a></button>
+				</div>
+			</div>
+
+			<div class="mySlides" id="content-5">
+				<img src="img/bg-topo1.jpg" style="width:100%">
+				<div class="text">
+					<h1>Teste 5</h1>
+					<br>
+					<p style="color: white;">A Fundação Demócrito Rocha (tvopovo) é um espaço coletivo, democrático, de ideias e ações que resultem, principalmente, no desenvolvimento humano e de seu meio ambiente global.</p>
+					<button class="button-slide"><a class="button-slide-link" href="#">Ver mais</a></button>
+				</div>
+			</div>
+
+			<nav class="nav-bottom justify-content-center align-items-center">
+				<ul class="">
+					<div class="lista-itens" style="text-align:center">
+
+						<div data-id="content-1" class="dot dot-mobile" id="dot" onclick="currentSlide(1)"><span class="span">Cursos de quadrinhos</span></div>
+						<div data-id="content-2" class="dot dot-mobile" id="dot" onclick="currentSlide(2)"><span class="span">Cursos de quadrinhos</span></div>
+						<div data-id="content-3" class="dot dot-mobile" id="dot" onclick="currentSlide(3)"><span class="span">Cursos de quadrinhos</span></div>
+						<div data-id="content-4" class="dot dot-mobile" id="dot" onclick="currentSlide(4)"><span class="span">Cursos de quadrinhos</span></div>
+						<div data-id="content-5" class="dot dot-mobile" id="dot" onclick="currentSlide(5)"><span class="span">Cursos de quadrinhos</span></div>
+
+					</div>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+
+	<!-- ao vivo -->
+	<section class="ao-vivo">
+		
+		<div class="col col-lg-7 col-10 m-auto">
+			
+			<ul class="ao-vivo-before d-lg-flex justify-content-lg-between flex-lg-wrap justify-content-center">
+
+				<li>
+					<div class="um">
+						<span class="live-signal-anim"></span>
+						<p>AO VIVO</p>
+					</div>
+				</li>
+
+				<li >
+					<div class="dois">
+						<p class="texto-aovivo">Enfrentamento à Violência Sexual contra crianças e adolescentes</p>
+						<p>17:30 - 18:00</p>
+					</div>
+				</li>
+
+				<li>
+					<div>
+						<center><button><a href="#">Ver mais</a></button></center>
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</section>
+
+	<div class="container-principal"></div>
+
+	
+	<!-- 1° sessão -->
+
+	<section class="tvopovo container py-5 pb-5">
+		<h1>Assista em qualquer lugar</h1>
+		<div class="row">
+
+			<div class="col col-lg-9 m-auto">
+				<p class="my-4" style="text-align: center;">Se inscreva no nosso canal!</p>
+			</div>
+
+			<div class="col col-lg-11 m-auto mt-5 col-sm-12">
+
+				<ul class="d-flex justify-content-lg-between flex-wrap mt-5 justify-content-center px-3">
+
+					<li class="">
+						<div class="card">
+							<img src="img/card-img.png" style="width:100%">
+							<div class="card-text">
+								<p class="my-1">Festival multimídia</p>
+								<span>A arte através das mídias</span>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src="img/card-img.png" style="width:100%">
+							<div class="card-text">
+								<p class="my-1">Festival multimídia</p>
+								<span>A arte através das mídias</span>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src="img/card-img.png" style="width:100%">
+							<div class="card-text">
+								<p class="my-1">Festival multimídia</p>
+								<span>A arte através das mídias</span>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src="img/card-img.png" style="width:100%">
+							<div class="card-text">
+								<p class="my-1">Festival multimídia</p>
+								<span>A arte através das mídias</span>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src="img/card-img.png" style="width:100%">
+							<div class="card-text">
+								<p class="my-1">Festival multimídia</p>
+								<span>A arte através das mídias</span>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src="img/card-img.png" style="width:100%">
+							<div class="card-text">
+								<p class="my-1">Festival multimídia</p>
+								<span>A arte através das mídias</span>
+							</div>
+						</div>
+					</li>
+
+
+
+				</ul>
+				
+			</div>
+
+			<div class="col col-lg-9 m-auto my-lg-4">
+				<center><button class="button-tvopovo"><a href="#">Ver mais</a></button></center>
+			</div>
+			
+
+		</div>
+
+	</section>
+
+	<section class="futura container">
+		
+		<div class="col col-lg-9 m-auto">
+
+			<ul class="logos mb-lg-5 d-lg-flex justify-content-lg-between flex-wrap justify-content-center">
+
+				<li class="logo-tv">
+					<img src="img/tv-o-povo.png">
+				</li>
+
+				<li>
+					<p>é o canal Futura</p>
+				</li>
+
+				<li class="logo-futura">
+					<img src="img/logo-futura.png">
+				</li>
+
+			</ul>
+
+			<ul class="logo-youtube mt-lg-0 mt-2 mb-lg-5 d-lg-flex justify-content-lg-between flex-wrap justify-content-center">
+
+				<li>
+					<p>Se inscreva no nosso canal!</p>
+				</li>
+
+				<li>
+					<img src="img/icon-youtube.png">
+				</li>
+
+			</ul>
+
+		</div>
+
+	</section>
+
+
+	<!-- footer -->
+
+	<div class="footer container-fluid d-flex align-items-end pb-lg-5 pb-3 pt-4">
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-10 col-12 mt-5 px-0 d-flex justify-content-center m-auto flex-column">
+					<img src="img/logo-desktop.svg" class="mt-5">
+
+					<div class="sociais d-flex align-items-left justify-content-left">
+						<ul>
+							<p>Encontre-nos nas redes sociais!</p>
+							<li>
+								<i class="inverted facebook icon"></i>  <span> /fundacaodemocritorocha</span>
+							</li>
+							<li>
+								<i class="inverted instagram icon"></i>  <span> @fundacaodemocritorocha</span>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="box-expediente d-flex justify-content-between align-items-center mt-4">
+						<span class="copy">Copyright © 2020</span>
+
+						<div class="expediente" style="display: none;">
+
+							<div class="container">
+								<h2 class="">Digital</h2>
+								<div class="row">
+									<div class="col">
+										<ul class="lista-expediente mb-1">
+											<li>
+												<h3 style="text-align: left;">Head de Estratégia Digital</h3>
+												<p style="text-align: left;">Filipe Dummar</p>     
+											</li>
+											<li>
+												<h3 style="text-align: left;">Gerente de Projetos Digitais</h3>
+												<p style="text-align: left;">Maria Fernandes</p>         
+											</li>
+											<li>
+												<h3 style="text-align: left;">Gerente de Inovação / UX</h3>
+												<p style="text-align: left;">Brenda Câmara</p>    
+											</li>
+										</ul>
+
+									</div>
+
+									<div class="col">
+
+										<ul class="lista-expediente">
+											<li>
+												<h3 style="text-align: left;">UX/UI Designer</h3>
+												<p style="text-align: left;">Izac Sidarta</p>         
+											</li>
+											<li>
+												<h3 style="text-align: left;">Front-End</h3>
+												<p style="text-align: left;">Nayane Maria</p>
+											</li>
+											<li>
+												<h3 style="text-align: left;">Back-End</h3>
+												<p style="text-align: left;">Rayane Moreira</p>
+											</li>   
+										</ul>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						
+						<div class="div-button-footer d-flex align-items-center justify-content-center" id="button">
+							<span>Expediente</span><i class="exped"></i>
+						</div>
+
+					</div>
+				</div>	
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/tvopovo.js"></script>
+</body>
+</html>

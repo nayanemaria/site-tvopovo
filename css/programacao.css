@@ -1,0 +1,337 @@
+.container-principal {
+    position: relative;
+}
+
+.container-principal::before, 
+.container-principal::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 595px;
+    background-image: url(../img/bg-lados.svg);
+    position: absolute;
+    top: 80px;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;  
+}
+
+.container-principal::before {
+    left: 0;
+    top: 120px;
+    transform: rotate(180deg);
+}
+
+.container-principal::after {
+    right: 0;
+}
+
+.programacao-h1 {
+    font-family: 'Barlow-Medium';
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-buttons {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.carousel-prog .owl-stage {
+    margin: 20px auto;
+    display: contents;
+}
+
+.container-buttons .item {
+    text-align: center;
+
+}
+
+.item.teste{
+    display: flex;
+}
+
+.um{
+    width: 531px;
+    height: 105px;
+    background-color: #179299;
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 12px;
+}
+
+.dois{
+    width: 300px;
+    height: 105px;
+    background-color: #fff;
+    padding: 12px 12px;
+    border: 1px solid #179299;
+    border-radius: 10px;
+    right: 12px;
+}
+
+.texto-intro{
+    font-family: "Barlow-Regular";
+    color: #707070;
+    text-align: center;
+    font-size: 18px;
+}
+
+.um p.horario, .um p.informacao{
+    font-family: "Barlow-Bold";
+    color: white;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.dois p{
+    font-family: "Barlow-Regular";
+    color: #707070;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.button-infor{
+    display: none;
+    font-family: "Barlow-Regular";
+    color: white;
+    text-decoration: none;
+}
+.um p.horario::after{
+    content: '';
+    display: block;
+    background-image: url("../img/icon-prog.svg");
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 40px;
+    margin-top: -32px;
+}
+.container-buttons button {
+    border: 0;
+    color: #00828A;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Barlow-Regular';
+}
+
+.container-buttons .center button {
+    font-size: 25px;
+}
+
+.owl-theme .owl-nav {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: transparent;
+}
+.owl-theme .owl-nav [class*="owl-prev"] span , .owl-theme .owl-nav [class*="owl-next"] span{
+    font-size: 32px;
+    color: #179299;
+}
+
+.owl-theme .owl-nav [class*="owl-prev"]:hover , .owl-theme .owl-nav [class*="owl-next"]:hover {
+    color: #179299;
+}
+
+.owl-theme.owl-buttons {
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+}
+.changeYear-btn.active-btn a, .um p{
+    font-size: 25px;
+}
+
+/*MENU DESKTOP*/
+
+
+@media only screen and (min-width: 1190px) {
+    .um p.horario{
+        width: 180px;
+        margin: 6px 0;
+    }
+    .um p.informacao{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1189px) and (min-width: 992px){
+    .um p.horario, .um p.informacao{
+        font-size: 18px;
+    }
+    .dois p{
+        font-size: 14px;
+        color: #707070;
+    }
+    .um p.horario{
+     width: 180px;
+     margin-top: 14px;
+ }
+ .programacao-h1 {
+    font-size: 16px;
+    font-family: 'Barlow-Bold';
+}
+}
+
+@media (min-width: 992px){
+    .button-infor{
+        display: none;
+    }
+    .um{
+        display: inline-flex;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .button-infor{
+        display: none;
+    }
+    .owl-carousel.carousel-prog {
+        height: 100%;
+    }
+    .owl-theme .owl-nav [class*="owl-"] span {
+        font-size: 32px;
+        color: #179299;
+    }
+    .owl-carousel .owl-item img {
+        display: flex;
+    }
+    .button-infor{
+        display: block;
+        font-size: 14px;
+        margin-top: 10%;
+    }
+    .item.teste{
+        display: block;
+    }
+    .um{
+        width: 100%;
+        height: 248px;
+        background-color: #179299;
+        padding: 30px 20px;
+        border-radius: 10px;
+        left: 0px;
+    }
+
+    .dois{
+        display: none;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        padding: 10px 5px;
+        border: 1px solid #179299;
+        border-radius: 10px;
+        right: 0px;
+        margin-top: -100px;
+        position: absolute;
+    }
+    .um p.horario{
+        margin: 0 0;
+    }
+    .um p.informacao{
+        font-size: 20px;
+        margin-top: 10%;
+    }
+    .dois p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .um p.horario::after {
+        margin-left: 110px;
+    }
+    .um p.horario {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 580px){
+    .um p.horario::after {
+        margin-left: 50px;
+    }
+    .um p.horario {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 579px) and (min-width: 521px){
+    .um p.horario::after {
+        margin-left: 40px;
+    }
+    .um p.horario {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 520px) and (min-width: 470px){
+    .um p.horario::after {
+        margin-left: 20px;
+    }
+    .um p.horario {
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 469px) and (min-width: 431px){
+    .um p.horario::after {
+        margin-left: 5px;
+    }
+    .um p.horario {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 430px) and (min-width: 361px){
+    .um p.horario {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 380px){
+    .um p.horario{
+        font-size: 20px;
+    }
+    .um p.informacao{
+        font-size: 17px;
+        margin-top: 18%;
+    }
+    .button-infor{
+        display: block;
+        font-size: 14px;
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 360px){
+    .um p.horario {
+        margin-left: 18px;
+    }
+}
